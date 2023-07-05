@@ -18,7 +18,6 @@ Download datasets from [this drive](https://drive.google.com/file/d/10SGv_kbYhVL
 CUDA_VISIBLE_DEVICES=0 python train.py --exp_name with-pmc --temporal_weight 1.0
 ```
 
-
 ## Testing
 Download Pretrained Network from [google drive](https://drive.google.com/file/d/1nlqoQdlWIHz5aAHVQ-1TfKy3pnZ3Dthl).
 
@@ -33,8 +32,21 @@ python inference.py --input_path ${your_input_folder} --output_path ${your_outpu
 python translate_video.py --input_video ${your_input_video} --output_dir ${your_output_folder} --model_path pretrained.ckpt
 ```
 
+## Results
+
+### Image Results
+| Images|
+| ------- |
+| ![Results](assets/1.jpg) |
+| ![Results](assets/2.jpg) |
+| ![Results](assets/3.jpg) |
+| ![Results](assets/4.jpg) |
+
 ### Video Results
 [![Video Results](https://img.youtube.com/vi/Fbiopc40z58/2.jpg)](https://www.youtube.com/watch?v=Fbiopc40z58 "Video Animation")
+
+### Visualization of Spatio-Temporal Coorelative Maps
+![Spatio-Temporal Coorelative Maps](assets/visual.jpg)
 
 ## Citation
 ```
