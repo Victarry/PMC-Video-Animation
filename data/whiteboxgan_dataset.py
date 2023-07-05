@@ -6,10 +6,9 @@ from torchvision import transforms
 from pathlib import Path
 
 
-class Dataset(pl.LightningDataModule):
+class WhiteBoxGANDataset(pl.LightningDataModule):
     def __init__(self,
                  root: str,
-                 style: str ,
                  accelerator: str,
                  face_style: str,
                  sample_steps: list,
@@ -18,7 +17,6 @@ class Dataset(pl.LightningDataModule):
                  evaluate_temp=False, **kargs):
         super().__init__()
         self.root = Path(root)
-        self.scene_style = style
         self.face_style = face_style
         self.batch_size = batch_size
         self.num_workers = num_workers

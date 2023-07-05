@@ -23,7 +23,7 @@ class BaseOptions():
         parser.add_argument('--accelerator', default='ddp')
         parser.add_argument('--gpus', default=1, help='number of gpus to train on')
         parser.add_argument('--exp_name', required=True, help='name of the experiments. It decides where to store samples and checkpoints.')
-        parser.add_argument('--logging_dir', type=str, default='./logs_hope', help='logging directory, including hparams, val_results, test_results,  ')
+        parser.add_argument('--logging_dir', type=str, default='./logs', help='logging directory, including hparams, val_results, test_results,  ')
         # model related parameters
         parser.add_argument('--netG', default='anime', help='type of generator. resnet_generator | unet_generator | anime_generator')
         parser.add_argument('--res_blocks', type=int, default=8, help='number of resblocks in resnet generator')
@@ -32,7 +32,6 @@ class BaseOptions():
         parser.add_argument('--d_norm', default='layer', help='norm layer type of discriminator.')
         # dataset parameters
         parser.add_argument('--root', default='datasets')
-        parser.add_argument('--style', default='Shinkai')
         parser.add_argument('--batch_size', type=int, default=8, help='input batch size')
         parser.add_argument('--num_workers', type=int, default=8, help='threads for loading data')
         parser.add_argument('--comment', help='other comment to record')

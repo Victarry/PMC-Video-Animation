@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-from models.model import WhiteBoxGANModel
+from models.whiteboxgan_model import WhiteBoxGANModel
 from tqdm import tqdm
 import torch
 from utils.util import *

@@ -1,3 +1,6 @@
 .DS_Store
 .vscode/*
+logs/*
 *.ckpt
+**/*.jpg
+models/vgg19.npy

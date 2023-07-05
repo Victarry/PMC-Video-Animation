@@ -4,7 +4,7 @@ from PIL import Image
 import torch
 from data.base import ImageFolder
 from torchvision import transforms
-from models.model import WhiteBoxGANModel
+from models.whiteboxgan_model import WhiteBoxGANModel
 import numpy as np
 
 if __name__ == '__main__':
